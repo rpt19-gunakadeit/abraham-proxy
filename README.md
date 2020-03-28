@@ -4,10 +4,9 @@
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/rpt19-gunakadeit/david-proxxy
+  - https://github.com/rpt19-gunakadeit/damien-proxy
+  - https://github.com/rpt19-gunakadeit/rebekah-service-proxy
 
 ## Table of Contents
 
