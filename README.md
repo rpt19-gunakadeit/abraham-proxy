@@ -4,9 +4,9 @@
 
 ## Related Projects
 
-  - https://github.com/rpt19-gunakadeit/david-proxxy
+  - https://github.com/rpt19-gunakadeit/david-proxy
   - https://github.com/rpt19-gunakadeit/damien-proxy
-  - https://github.com/rpt19-gunakadeit/rebekah-service-proxy
+  - https://github.com/rpt19-gunakadeit/Rebekah-proxy
 
 ## Table of Contents
 
