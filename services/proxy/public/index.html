@@ -10,14 +10,27 @@
     <div id="reviews-service"></div>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="http://localhost:1996"></script>
-    <!-- <script src="http://localhost:5000"></script>
-    <script src="http://localhost:2000"></script>
+    <!-- abrahams service -->
+    <script src="http://localhost:3000/bundle.js"></script>
+    <!-- davids service -->
+    <script src="http://localhost:5000/t/:product/:style/dist/bundle.js"></script>
     <script>
-      ReactDOM.render(
-        React.createElement(Description),
-        document.getElementById('root')
-      )
-    </script> -->
+        var path = window.location.pathname.split('/');
+        var productId = path[2];
+        var styleId = path[3];
+        ReactDOM.render(
+            React.createElement(Description, { productId }),
+            document.getElementById('root')
+        )
+    </script>
+    <!-- rebekahs service -->
+    <script src="http://localhost:2000/reviews.bundle.js" ></script>
+    <script src="http://localhost:2000/shippingReturns.bundle.js" ></script>
+    <script>
+      ReactDOM.render(React.createElement(ShippingReturns), document.getElementById('shipping-returns'))
+    </script>
+    <script>
+      ReactDOM.render(React.createElement(Reviews), document.getElementById('reviews-service'))
+    </script>
   </body>
 </html>
