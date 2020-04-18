@@ -2,40 +2,38 @@
 <html>
   <head>
     <title>Abraham's Proxy</title>
-    <link href="../../damien-styles-and-inventory/client/dist/inventory.css" type="text/css" rel="stylesheet">
+    <!-- <link href="../proxy.css" type="text/css" rel="stylesheet"> -->
+    <!-- <link href="../../abraharm-productDisplay/client/dist/styles.css" type="text/css" rel="stylesheet"> -->
   </head>
   <body>
+    <!-- <div id='parent'></div>
     <div id="productImages"></div>
     <div id="root"></div>
     <div id="shipping-returns"></div>
     <div id="reviews-service"></div>
-    <div id="styles"></div>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
     <!-- abrahams service -->
-    <script src="http://localhost:3000/bundle.js"></script>
+    <!-- <script src="http://localhost:3000/bundle.js"></script>
+    <script src="http://localhost:2000/reviews.bundle.js" ></script>
+    <script src="http://localhost:2000/shippingReturns.bundle.js" ></script>
+    <script src="http://localhost:5000/t/:product/:style/descriptionBundle.js"></script> -->
     <!-- davids service -->
-    <script src="http://localhost:5000/t/:product/:style/bundle.js"></script>
-    <script>
+    <!-- <script>
         var path = window.location.pathname.split('/');
-        console.log('path: ',  path)
         var productId = path[2];
         var styleId = path[3];
         ReactDOM.render(
             React.createElement(Description, { productId }),
             document.getElementById('root')
         )
-    </script>
+    </script> -->
     <!-- rebekahs service -->
-    <script src="http://localhost:2000/reviews.bundle.js" ></script>
-    <script src="http://localhost:2000/shippingReturns.bundle.js" ></script>
-    <script>
+    <!-- <script>
       ReactDOM.render(React.createElement(ShippingReturns), document.getElementById('shipping-returns'))
     </script>
     <script>
       ReactDOM.render(React.createElement(Reviews), document.getElementById('reviews-service'))
-    </script>
-    <!-- damiens service -->
-    <script src="http://localhost:4000/bundle.js"></script>
+    </script> -->
   </body>
 </html>
