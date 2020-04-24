@@ -13,11 +13,11 @@
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <!-- abrahams service -->
-    <script src="https:localhost:3000/bundle.js"></script>
+    <script src="/productimages.bundle.js"></script>
      <!-- damiens service -->
-     <script src="https:localhost:4000/bundle.js"></script>
+     <script src="/bundle.js"></script>
     <!-- davids service -->
-    <script src="https:localhost:5000/t/:product/:style/bundle.js"></script>
+    <script src="/descriptionBundle.js"></script>
     <script>
         var path = window.location.pathname.split('/');
         console.log('path: ',  path)
@@ -29,13 +29,20 @@
         )
     </script>
     <!-- rebekahs service -->
-    <script src="https:localhost:2000/reviews.bundle.js" ></script>
-    <script src="https:localhost:2000/shippingReturns.bundle.js" ></script>
+    <script src="https://nikereviewservice.s3.us-east-2.amazonaws.com/reviews.bundle.js" ></script>
+    <script src="https://nikereviewservice.s3.us-east-2.amazonaws.com/shippingReturns.bundle.js" ></script>
     <script>
       ReactDOM.render(React.createElement(ShippingReturns), document.getElementById('shipping-returns'))
     </script>
     <script>
-      ReactDOM.render(React.createElement(Reviews), document.getElementById('reviews-service'))
+      ReactDOM.render(React.createElement(Reviews,
+        {productDetails: {
+          name: 'Nike Blazers',
+          price: 185,
+          salePrice: 150,
+          thumbnail:'https://static.nike.com/a/images/t_default/eric5lwitzffpoisq0rj/blazer-mid-77-vintage-shoe'
+        }
+      }), document.getElementById('reviews'))
     </script>
 
   </body>
