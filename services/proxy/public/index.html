@@ -7,30 +7,34 @@
   <body>
     <div id="productImages"></div>
     <div id="root"></div>
-    <div id="shipping-returns"></div>
-    <div id="reviews-service"></div>
+    <!-- <div id="shipping-returns"></div>
+    <div id="reviews"></div> -->
     <div id="styles"></div>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <!-- abrahams service -->
     <script src="https://product-images-fec.s3-us-west-1.amazonaws.com/productimages.bundle.js"></script>
      <!-- damiens service -->
-     <script src="/bundle.js"></script>
+     <script src="./bundle.js"></script>
     <!-- davids service -->
     <script src="/descriptionBundle.js"></script>
     <script>
         var path = window.location.pathname.split('/');
-        console.log('path: ',  path)
         var productId = path[2];
         var styleId = path[3];
+
         ReactDOM.render(
             React.createElement(Description, { productId }),
             document.getElementById('root')
         )
     </script>
     <!-- rebekahs service -->
+    <div id="shipping-returns"></div>
+    <div id="reviews"></div>
+
     <script src="https://nikereviewservice.s3.us-east-2.amazonaws.com/reviews.bundle.js" ></script>
     <script src="https://nikereviewservice.s3.us-east-2.amazonaws.com/shippingReturns.bundle.js" ></script>
+
     <script>
       ReactDOM.render(React.createElement(ShippingReturns), document.getElementById('shipping-returns'))
     </script>
