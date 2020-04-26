@@ -1,4 +1,4 @@
-import './proxy.css'
+// import './proxy.css'
 
 class App extends React.Component {
   constructor(props) {
