@@ -1,5 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import './proxy.css'
 
 class App extends React.Component {
   constructor(props) {
