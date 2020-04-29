@@ -1,5 +1,5 @@
 let path = require('path');
-let src = path.join(__dirname, '/client/src');
+let src = path.join(__dirname, '/client');
 let dist = path.join(__dirname, '/public/dist');
 
 module.exports = {
@@ -22,7 +22,5 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       }
     ]
-  },
-  watch: true,
-  mode: 'production'
+  }
 }

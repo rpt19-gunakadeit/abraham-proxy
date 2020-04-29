@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .wrapper {
@@ -14,12 +16,24 @@ body {
 
 #productImages {
   height: 250px;
-  width: 250px;
+  width: 700px;
+  display: inline-block;
+}
+.defaultDisplay {
+  height: 250px;
+  width: 700px;
+  display: inline-block;
 }
 
+/* .imageBody {
+  display: flex;
+} */
+
+/*
 #root {
   height: 250px;
   width: 250px;
+
 }
 
 #styles {
@@ -30,9 +44,9 @@ body {
 #shipping-returns {
   height: 250px;
   width: 250px;
-}
+} */
 
-#reviews {
+/* #reviews {
   height: 250px;
   width: 250px;
-}
+} */
