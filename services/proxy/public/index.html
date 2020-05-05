@@ -18,6 +18,20 @@
     <script src="https://product-images-fec.s3-us-west-1.amazonaws.com/productimages.bundle.js"></script>
      <script src="https://product-images-fec.s3-us-west-1.amazonaws.com/bundle.js"></script>
     <script src="https://product-images-fec.s3-us-west-1.amazonaws.com/descriptionBundle.js"></script>
+
+    <script>
+      let url = window.location.href.split('=');
+      let styleId = url[1];
+      console.log('styleId : ', styleId)
+      let data = {
+        id: styleId
+      }
+      ReactDOM.render(
+        React.createElement(ProductImages, { styleId }),
+        document.getElementById('productImages')
+      )
+    </script>
+
     <script>
         var path = window.location.href;
         let productId = path.split('=')[1];
