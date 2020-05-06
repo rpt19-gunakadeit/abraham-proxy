@@ -2,14 +2,21 @@
 <html>
   <head>
     <title>Nike FEC</title>
-    <!-- <link rel="stylesheet" href="./proxy.css"> -->
+    <link rel="stylesheet" href="./app.css">
   </head>
-  <div id="productImages"></div>
-  <div id="styles"></div>
-  <div id="root"></div>
-  <div id="shipping-returns"></div>
-  <div id="reviews"></div>
   <body>
+    <div className="nav">
+      <img src="https://miro.medium.com/max/3360/1*OUhIm3AKJlbrFrxdS-7E6Q.png" class="navbar">
+    </div>
+
+    <div id="nike-body">
+      <div id="productImages"></div>
+      <div id="styles"></div>
+      <div id="root"></div>
+      <div id="shipping-returns"></div>
+      <div id="reviews"></div>
+    </div>
+
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js"></script>
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js"></script>
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -18,19 +25,6 @@
     <script src="https://product-images-fec.s3-us-west-1.amazonaws.com/productimages.bundle.js"></script>
      <script src="https://product-images-fec.s3-us-west-1.amazonaws.com/bundle.js"></script>
     <script src="https://product-images-fec.s3-us-west-1.amazonaws.com/descriptionBundle.js"></script>
-
-    <script>
-      let url = window.location.href.split('=');
-      let styleId = url[1];
-      console.log('styleId : ', styleId)
-      let data = {
-        id: styleId
-      }
-      ReactDOM.render(
-        React.createElement(ProductImages, { styleId }),
-        document.getElementById('productImages')
-      )
-    </script>
 
     <script>
         var path = window.location.href;
