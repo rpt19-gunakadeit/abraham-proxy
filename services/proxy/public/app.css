@@ -47,18 +47,15 @@ footer {
 }
 
 .defaultSize {
-  margin: 5px;
-  max-width: 450px;
+  margin: 3px;
+  max-width: 390px;
   height: auto;
 }
 
-
-
-/* Details */
 #product-details {
   width: 320px;
 }
 
 #shipping-returns, #reviews {
-  width: 100px;
+  max-width: 100%;
 }
