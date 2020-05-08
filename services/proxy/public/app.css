@@ -38,17 +38,30 @@ footer {
   font-family: Verdana;
 }
 
+div  {
+  display: block;
+}
 
+#productImages  {
+  width:80%
+}
+
+/* #root {
+  display: flex;
+  padding-right: 2px;
+  width: 35px;
+} */
 
 /* Images Service */
 .imageBody {
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
 }
 
 .defaultSize {
   margin: 3px;
-  max-width: 390px;
+  max-width: 450px;
   height: auto;
 }
 
