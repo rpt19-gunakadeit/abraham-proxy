@@ -1,10 +1,10 @@
-/* nav  bar */
+/* nav bar */
 .navbar {
   width: 100%;
   max-width: 100%;
 }
 
-/* nike body */
+/* body */
 #nike-body {
   display: grid;
   grid-template-columns: auto auto;
@@ -22,14 +22,6 @@
   margin-left: 15px;
   margin-top: 15px;
 }
-/* .defaultDisplay {
-  background-color: yellow;
-  width: 65%;
-} */
-/* .imageBody {
-  background-color: blueviolet;
-  width: 65%;
-} */
 .defaultSize {
   display: grid;
   grid-template-columns: auto;
@@ -38,12 +30,25 @@
   height: auto;
 }
 
-
+/* line breaker for reb */
 .breaker-line {
   border-bottom: #e3e3e3 1px solid;
   font-family: Verdana;
 }
+#shipping-returns {
+  width: 250px;
+  max-width: 100%;
+  margin-top: 100%;
+  margin-right: 35%;
+}
+#reviews {
+  margin-left: 100%;
+  margin-top: 33%;
+  width: 250px;
+  max-width: 100%;
+}
 
+/* david's description */
 #root {
   display: flex;
   margin-top: 28%;
@@ -54,24 +59,8 @@
   width: 320px;
 }
 
-#shipping-returns {
-  width: 250px;
-  max-width: 100%;
-  /* m-left: 50%; */
-  margin-top: 95%;
-  margin-right: 35%;
-}
-#reviews {
-  background-color: red;
-  margin-left: 100%;
-  /* margin-right: 33%; */
-  margin-top: 33%;
-  width: 250px;
-  max-width: 100%;
-}
-
+/* damiens size/style */
 #styles {
-  background-color: turquoise;
   margin-right: 50%;
   width: 50%;
 }
